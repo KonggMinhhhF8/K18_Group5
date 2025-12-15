@@ -1,0 +1,106 @@
+.hero {
+    display: flex;
+    /*align-items: center;*/
+    justify-content: space-between;
+}
+
+.hero-left {
+    background-image: url("../images/linear-gradient.svg");
+    padding-left: 162px;
+    padding-top: 250px;
+    max-width: 798px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    margin-bottom: 60px;
+}
+
+.hero-content h1 {
+    font-size: 58px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    color: #666666;
+}
+
+.hero-content p {
+    color: #808080;
+}
+
+.hero-bottom h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+
+.hero-buttons a:first-child {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 18px 24px;
+    background-color: white;
+    border-radius: 56px;
+    margin-right: 10px;
+}
+
+.hero-buttons a:last-child {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 18px 24px;
+    background-color: #1a1a1a;
+    border-radius: 56px;
+    border: 1px solid #262626;
+}
+
+.hero-right {
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.hero-images {
+    background-image: url("../images/logo-dx.svg");
+    width: 603px;
+    height: 570px;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
