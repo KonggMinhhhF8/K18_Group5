@@ -1,0 +1,95 @@
+.works-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.works-card {
+    background: linear-gradient(180deg, #1A1A1A -26.18%, rgba(26, 26, 26, 0) 59.52%);
+    padding: 50px;
+    max-width: 773px;
+    border: 1px solid;
+    border-image-source: linear-gradient(180deg, #1F1F1F 0%, rgba(31, 31, 31, 0) 100%);
+    border-radius: 20px;
+}
+
+.works-background {
+    position: relative;
+    background-image: url("../images/works-background.svg");
+    background-repeat: no-repeat;
+    width: 673px;
+    height: 411px;
+    border: 1px solid #1a1a1a;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.works-button {
+    background: #1A1A1A33;
+    position: absolute;
+    padding: 18px 24px;
+    border: 1px solid #262626;
+    border-radius: 74px;
+    backdrop-filter: blur(12px);
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    bottom: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.works-button img {
+    margin-left: 10px;
+}
+
+.works-icon img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.works-text {
+    margin-top:76px;
+}
+
+.works-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.works-text-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.works-text p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #8c8c8c;
+}
+
+.works-button-box {
+    display: flex;
+    background: #1A1A1A33;
+    padding: 18px 24px;
+    border: 1px solid #262626;
+    border-radius: 74px;
+    backdrop-filter: blur(12px);
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    gap: 10px;
+    margin: 0 auto;
+
+}

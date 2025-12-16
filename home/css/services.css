@@ -7,8 +7,14 @@
 .services-card {
     width: 784px;
     border-radius: 20px;
-    border: 1px solid rgba(41, 41, 41, 1);
+    /*border: 1px solid rgba(41, 41, 41, 1);*/
     text-align: center;
+    background: linear-gradient(180deg, rgba(32, 32, 32, 0.2) 0%, rgba(32, 32, 32, 0) 100%);
+    border: 1px solid;
+    border-image-source: linear-gradient(180deg, #292929 0%, rgba(41, 41, 41, 0) 100%);
+    backdrop-filter: blur(12px)
+
+
 }
 
 .services {
@@ -68,7 +74,6 @@
 .services-button a {
     padding: 18px 24px;
     background-color: #1a1a1a;
-    margin: 50px 0 80px 0;
     border: 1px solid #262626;
     border-radius: 74px;
 }
