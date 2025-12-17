@@ -1,0 +1,144 @@
+.testimonials {
+    position: relative;
+    width: 100%;
+    z-index: 5;
+}
+
+.testimonials:before {
+    content: '';
+    position: absolute;
+    width: 403px;
+    height: 423px;
+    background: linear-gradient(90deg, #0F0F0F 0%, rgba(15, 15, 15, 0) 100%);
+    left: 0;
+    z-index: 10;
+}
+
+.test-box:before {
+    content: '';
+    position: absolute;
+    width: 403px;
+    height: 423px;
+    background: linear-gradient(90deg, rgba(15, 15, 15, 0) 0%, #0F0F0F 100%);
+    right: 0;
+    z-index: 10;
+}
+
+.test-box {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    overflow-x: auto;
+}
+
+
+.test-box::-webkit-scrollbar {
+    height: 10px;
+}
+
+.test-box::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+}
+
+.test-box::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.test-box::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.7);
+
+}
+
+
+.test-card-top {
+    position: relative;
+    padding: 40px;
+    background: linear-gradient(180deg, #1A1A1A -29.71%, rgba(26, 26, 26, 0) 75.89%);
+    border: 1px solid rgba(38, 38, 38, 1);
+    border-radius: 20px;
+    width: 510px;
+    height: 303px;
+    margin-bottom: 44px;
+}
+
+.logo-twitter img {
+    width: 30px;
+    height: 30px;
+    /*background-position: center;*/
+
+}
+
+.logo-twitter {
+    display: flex;
+    width: 58px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    background: rgba(26, 26, 26, 1);
+    border: 1px solid rgba(38, 38, 38, 1)
+}
+
+.test-card-top > p {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 1.5;
+    letter-spacing: 0;
+
+}
+
+.triangle {
+    position: absolute;
+    left: 12px;
+    bottom: -25px;
+}
+
+.test-card-bottom {
+    display: flex;
+    gap: 14px
+}
+
+.test-info {
+    margin: 6px 0;
+    height: 59px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.test-info h3 {
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.test-info span {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0;
+    color: rgba(128, 128, 128, 1);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
