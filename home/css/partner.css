@@ -1,0 +1,52 @@
+
+.partner-box {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+
+
+.partner-card {
+    width: 512px;
+    padding: 100px 50px 80px 50px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    border: 1px solid transparent;
+    background:
+            url("../images/background-partner-card.svg") no-repeat center / contain padding-box,
+            linear-gradient(#0f0f0f, #0f0f0f) padding-box,
+            linear-gradient(180deg, #292929 0%, rgba(41, 41, 41, 0) 100%) border-box;
+}
+
+.icon-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.icon-card img:nth-child(2) {
+    padding: 8px;
+}
+
+.text-card {
+    margin-top: 60px;
+}
+.text-card h3{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.text-card p {
+    color: #8C8C8C;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
