@@ -36,7 +36,11 @@
 }
 .footer-social-list > li:first-child,
 .footer-social-list > li:last-child{
-    padding: 20px;
+    width: 64px;
+    height:64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     border: 1px solid transparent;
     background-image:
@@ -50,12 +54,10 @@
 
 .footer-social-list li:nth-child(2) a {
     width: 64px;
-    height: 64px;
-
+    height:64px;
     display: flex;
     justify-content: center;
     align-items: center;
-
     border-radius: 50%;
     border: 1px solid transparent;
     background-image:

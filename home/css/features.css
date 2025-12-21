@@ -1,5 +1,5 @@
 .features {
-    margin: 150px;
+    margin-top: 150px;
 }
 
 .features-header {
@@ -10,6 +10,7 @@
 .features-header h2 {
     font-size: 48px;
     font-weight: 600;
+    line-height: 150%;
 }
 
 .features-header h2 span {
@@ -25,37 +26,66 @@
 
 
 .features-box {
+    position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     gap: 100px;
-    flex-wrap: wrap;
+
+}
+
+.features-card-top,
+.features-card-bottom {
+    position: relative;
+    display: flex;
+    gap: 100px;
 }
 
 
 .features-card {
     text-align: center;
     position: relative;
-    width: 465px;
+    max-width: 465px;
     display: flex;
-    justify-content: center;
+    gap: 50px;
+    height: 100%;
     flex-direction: column;
     align-items: center;
 }
+/*Line*/
+.features-card-top:after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    height: 1px;
+    width: 100%;
+    background-color: #1f1f1f
+}
 
-.features-card:not(:nth-child(3n))::after {
+.features-card-top .features-card:nth-child(1)::after,
+.features-card-bottom .features-card:nth-child(1)::after{
     content: "";
     position: absolute;
     right: -50px;
-    top: 0;
     height: 100%;
     width: 1px;
-    background-color: #1f1f1f;
+    background-color: #1f1f1f
 }
+
+.features-card-top .features-card:nth-child(2)::after,
+.features-card-bottom .features-card:nth-child(2)::after{
+    content: "";
+    position: absolute;
+    right: -50px;
+    height: 100%;
+    width: 1px;
+    background-color: #1f1f1f
+}
+
+
 
 .features-card h3 {
     font-size: 24px;
     font-weight: 600;
-    margin: 50px 0 20px 0;
 }
 
 .features-card p {
@@ -75,7 +105,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
     padding: 18px 18px 18px 34px;
     background-color: #0f0f0f;
     border-radius: 100px;
@@ -87,6 +116,7 @@
     margin-left: 30px;
     background-color: #1a1a1a;
     border-radius: 135px;
+    background-size: contain;
 }
 
 

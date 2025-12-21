@@ -5,7 +5,9 @@
 }
 
 .services-card {
-    width: 784px;
+    display: flex;
+    flex-direction: column;
+    max-width: 784px;
     border-radius: 20px;
     text-align: center;
     backdrop-filter: blur(12px);
@@ -18,11 +20,13 @@
 .services-icon {
     padding-top: 120px;
     background-image: url("../images/service-radial.svg");
+
+
 }
 
 
 .services {
-    margin: 150px;
+    margin-top: 150px;
 }
 
 .services-header {
@@ -46,20 +50,20 @@
 }
 
 
-.services h3 {
+.services-card h3 {
     font-size: 30px;
     font-weight: 600;
     margin: 50px 0 20px 0;
 }
 
-.services p {
+.services-card p {
     font-size: 18px;
     color: #8c8c8c;
     font-weight: 400;
     padding: 0 80px;
 }
 
-.services a {
+.services-card a {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
@@ -69,10 +73,14 @@
 .services-button {
     display: flex;
     justify-content: center;
-    margin: 50px 0 80px 0;
+
+    padding: 50px 0 80px 0;
+    margin-top: auto;
 }
 
 .services-button a {
+    display: flex;
+    align-items: center;
     padding: 18px 24px;
     background-color: #1a1a1a;
     border: 1px solid #262626;
@@ -82,4 +90,6 @@
 .services-button a img {
     margin-left: 12px;
 }
+
+
 

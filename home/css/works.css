@@ -1,7 +1,31 @@
+.works {
+    margin: 150px;
+}
+
+.works-header {
+    text-align: center;
+}
+
+.works-header h2 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.works-header h2 span {
+    color: #666666;
+}
+
+.works-header p {
+    color: #808080;
+    font-size: 18px;
+    margin: 20px 250px
+}
+
 .works-box {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
+    justify-content: center;
 }
 
 .works-card {
@@ -25,6 +49,8 @@
 }
 
 .works-button {
+    display: flex;
+    align-items: center;
     background: #1A1A1A33;
     position: absolute;
     padding: 18px 24px;
@@ -79,6 +105,8 @@
 
 .works-button-box {
     display: flex;
+    align-items: center;
+    text-align: center;
     background: #1A1A1A33;
     padding: 18px 24px;
     border: 1px solid #262626;
@@ -89,7 +117,12 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
-    gap: 10px;
-    margin: 0 auto;
+}
+
+.works-button-box img {
+    margin-left: 10px;
+}
+
+.works-button-box a {
 
 }
