@@ -7,7 +7,7 @@
 .services-card {
     display: flex;
     flex-direction: column;
-    max-width: 784px;
+    width: calc((100% - 60px) / 2);
     border-radius: 20px;
     text-align: center;
     backdrop-filter: blur(12px);
