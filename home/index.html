@@ -25,8 +25,34 @@
     <title>Home Page</title>
 </head>
 <body>
+
+<input type="checkbox" id="menu-toggle" hidden>
+
+<label for="menu-toggle" class="menu-overlay"></label>
+
+<div class="mobile-menu">
+    <div class="mobile-menu-box">
+        <div class="mobile-menu-top">
+            <div class="logo-menu-bar"></div>
+            <label for="menu-toggle" class="close-menu"></label>
+        </div>
+    </div>
+    <div class="mobile-menu-bottom">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blogs</a></li>
+        </ul>
+    </div>
+</div>
+
 <nav class="nav-bar">
     <div class="nav-logo"><img src="./logo/logo-header.svg" alt="logo-nav"></div>
+    <label for="menu-toggle" class="icon-menu"></label>
     <ul class="nav-links">
         <li><a href="#">Home</a></li>
         <li><a href="#">Services</a></li>
@@ -222,7 +248,7 @@
     </div>
 </div>
 
-<div class="works">
+<div class="works container">
     <div class="works-header">
         <h2><span>Our</span> Works</h2>
         <p>Witness the brilliance of our previous projects. Our portfolio showcases the successful collaborations we've
@@ -297,7 +323,7 @@
     <button class="works-button-box"><a href="#"></a>View All Projects<img src="./icons/arrow-right.svg" alt=""></button>
 </div>
 
-<div class="testimonials-header">
+<div class="testimonials-header container">
     <h2><span>Our</span> Testimonials</h2>
     <p>Don't just take our word for it; hear what our satisfied clients have to say about their experience with
         DigitX. We take pride in building lasting relationships and delivering exceptional results.</p>
@@ -550,7 +576,7 @@
     </div>
 </div>
 <div class="partner">
-    <div class="partner-header">
+    <div class="partner-header container">
         <h2><span>Our</span> Partners and Clients</h2>
         <p>We are grateful for the opportunity to work with esteemed partners and clients. Our strong relationships are
             a testament to our dedication and expertise in the digital realm.</p>

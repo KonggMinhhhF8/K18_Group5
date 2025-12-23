@@ -1,6 +1,7 @@
 
 .cta-section-container {
     margin: 150px 0;
+    border-radius: 20px;
     position: relative;
     padding: 130px 150px 0 150px;
     background: linear-gradient(180deg, #1A1A1A -138.96%, #0F0F0F 100%);
@@ -87,6 +88,9 @@
     margin-top: 82px;
     text-align: center;
 
+}
+
+.cta-section-brand img  {
 }
 .cta-section-container:before {
     position: absolute;

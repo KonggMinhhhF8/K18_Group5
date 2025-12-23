@@ -41,6 +41,13 @@
     border-radius: 84px;
     padding: 16px 24px;
 }
+.mobile-menu {
+    display: none;
+}
+
+.logo-menu {
+    display: none;
+}
 
 
 
