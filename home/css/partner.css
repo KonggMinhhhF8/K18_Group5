@@ -1,4 +1,6 @@
-
+.partner {
+    margin: 150px 0;
+}
 .partner-header {
     text-align: center;
     margin-bottom: 50px;
@@ -23,12 +25,13 @@
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
 .partner-card {
-    width: 512px;
-    padding: 100px 50px 80px 50px;
+    width: calc((100% - 60px) /3);
+    padding: 80px 30px 60px 30px;
     border-radius: 20px;
     backdrop-filter: blur(12px);
     border: 1px solid transparent;
@@ -47,6 +50,11 @@
 
 .icon-card img:nth-child(2) {
     padding: 8px;
+}
+
+.icon-card img:first-child,
+.icon-card img:last-child {
+    width: 100px;
 }
 
 .text-card {

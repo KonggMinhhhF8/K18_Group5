@@ -23,28 +23,7 @@
 .testimonials-header p {
     color: #808080;
     font-size: 18px;
-    margin: 20px 250px
-}
-
-
-.testimonials:before {
-    content: '';
-    position: absolute;
-    width: 403px;
-    height: 423px;
-    background: linear-gradient(90deg, #0F0F0F 0%, rgba(15, 15, 15, 0) 100%);
-    left: 0;
-    z-index: 10;
-}
-
-.test-box:before {
-    content: '';
-    position: absolute;
-    width: 439px;
-    height: 423px;
-    background: linear-gradient(90deg, rgba(15, 15, 15, 0) 0%, #0F0F0F 100%);
-    right: 0;
-    z-index: 10;
+    margin: 20px 0;
 }
 
 .test-box {
@@ -53,6 +32,34 @@
     gap: 30px;
     overflow-x: auto;
 }
+
+.test-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.test-wrapper:before {
+    content: '';
+    position: absolute;
+    width: 403px;
+    height: 100%;
+    background: linear-gradient(90deg, #0F0F0F 0%, rgba(15, 15, 15, 0) 100%);
+    left: 0;
+    z-index: 10;
+}
+
+.test-wrapper:after {
+    content: '';
+    position: absolute;
+    width: 439px;
+    height: 100%;
+    top: 0;
+    background: linear-gradient(90deg, rgba(15, 15, 15, 0) 0%, #0F0F0F 100%);
+    right: 0;
+    z-index: 10;
+}
+
+
 
 
 .test-box::-webkit-scrollbar {

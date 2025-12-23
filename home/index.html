@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/tablet.css">
     <link rel="stylesheet" href="./css/mobile.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
@@ -27,9 +26,7 @@
 <body>
 
 <input type="checkbox" id="menu-toggle" hidden>
-
 <label for="menu-toggle" class="menu-overlay"></label>
-
 <div class="mobile-menu">
     <div class="mobile-menu-box">
         <div class="mobile-menu-top">
@@ -83,23 +80,6 @@
     </div>
     <div class="hero-right">
         <div class="hero-images"></div>
-        <div class="hero-layout">
-            <div class="layout1"></div>
-            <div class="layout2"></div>
-            <div class="layout3"></div>
-            <div class="layout4"></div>
-            <div class="layout5"></div>
-            <div class="layout6"></div>
-            <div class="layout7"></div>
-            <div class="layout8"></div>
-            <div class="layout9"></div>
-            <div class="layout10"></div>
-            <div class="layout11"></div>
-            <div class="layout12"></div>
-            <div class="layout13"></div>
-            <div class="layout14"></div>
-            <div class="layout15"></div>
-        </div>
     </div>
 </header>
 
@@ -110,7 +90,7 @@
             customer engagement, and higher ROI. Our tailored solutions are designed to meet your unique business needs,
             ensuring lasting success.</p>
     </div>
-    <div class="features-box container">
+    <div class="features-box">
         <div class="features-card-top">
             <div class="features-card">
                 <div class="features-icon">
@@ -248,8 +228,8 @@
     </div>
 </div>
 
-<div class="works container">
-    <div class="works-header">
+<div class="works">
+    <div class="works-header container">
         <h2><span>Our</span> Works</h2>
         <p>Witness the brilliance of our previous projects. Our portfolio showcases the successful collaborations we've
             had with diverse clients across various industries. Let our work speak for itself.</p>
@@ -320,16 +300,19 @@
                 in a significant increase in website traffic and leads.</p>
         </div>
     </div>
-    <button class="works-button-box"><a href="#"></a>View All Projects<img src="./icons/arrow-right.svg" alt=""></button>
+    <a href="#" class="works-button-box">View All Projects<img src="./icons/arrow-right.svg" alt=""></a>
 </div>
 
-<div class="testimonials-header container">
-    <h2><span>Our</span> Testimonials</h2>
-    <p>Don't just take our word for it; hear what our satisfied clients have to say about their experience with
-        DigitX. We take pride in building lasting relationships and delivering exceptional results.</p>
-</div>
 
-<div class="testimonials">
+
+<div class="testimonials container">
+    <div class="testimonials-header">
+        <h2><span>Our</span> Testimonials</h2>
+        <p>Don't just take our word for it; hear what our satisfied clients have to say about their experience with
+            DigitX. We take pride in building lasting relationships and delivering exceptional results.</p>
+    </div>
+</div>
+<div class="test-wrapper">
     <div class="test-box">
         <div class="test-card">
             <div class="test-card-top">
@@ -429,8 +412,9 @@
     </div>
 </div>
 
-<div class="faq container">
-    <div class="faq-header">
+
+<div class="faq">
+    <div class="faq-header container">
         <h2><span>Frequently</span> Asked Questions</h2>
         <p>Don't just take our word for it; hear what our satisfied clients have to say about their experience with
             DigitX. We take pride in building lasting relationships and delivering exceptional results.</p>
@@ -440,141 +424,143 @@
         <input type="text" id="search" placeholder="Search">
         <label for="search"></label>
     </div>
-    <div class="faq-container container">
-        <div class="questions-box">
-            <div class="box-left">
-                <div class="faq-box">
-                    <input type="checkbox" id="item" hidden>
-                    <div class="faq-text">
-                        <div class="list-question">
-                            <label for="item" class="question">How long does it take to complete a web development
-                                project?</label>
-                            <label for="item" class="icon-open"></label>
-                            <label for="item" class="icon-close"></label>
-                        </div>
-                        <div class="answer">
-                            <p>The timeline varies depending on the project's complexity and requirements. Our team
-                                strives to deliver projects on time while maintaining the highest quality standards.</p>
-                        </div>
+</div>
+<div class="faq-container">
+    <div class="questions-box container">
+        <div class="box-left">
+            <div class="faq-box">
+                <input type="checkbox" id="item" hidden>
+                <div class="faq-text">
+                    <div class="list-question">
+                        <label for="item" class="question">How long does it take to complete a web development
+                            project?</label>
+                        <label for="item" class="icon-open"></label>
+                        <label for="item" class="icon-close"></label>
                     </div>
-                </div>
-
-                <div class="faq-box">
-                    <input type="checkbox" id="item2" hidden>
-                    <div class="faq-text">
-                        <div class="list-question">
-                            <label for="item2" class="question">Can you handle large-scale mobile app development
-                                projects?</label>
-                            <label for="item2" class="icon-open"></label>
-                            <label for="item2" class="icon-close"></label>
-                        </div>
-                        <div class="answer">
-                            <p>The timeline varies depending on the project's complexity and requirements. Our team
-                                strives to deliver projects on time while maintaining the highest quality standards.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="faq-box">
-                    <input type="checkbox" id="item3" hidden>
-                    <div class="faq-text">
-                        <div class="list-question">
-                            <label for="item3" class="question">Do you offer maintenance services for websites and apps
-                                developed by other companies?</label>
-                            <label for="item3" class="icon-open"></label>
-                            <label for="item3" class="icon-close"></label>
-                        </div>
-                        <div class="answer">
-                            <p>The timeline varies depending on the project's complexity and requirements. Our team
-                                strives to deliver projects on time while maintaining the highest quality standards.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="faq-box">
-                    <input type="checkbox" id="item4" hidden>
-                    <div class="faq-text">
-                        <div class="list-question">
-                            <label for="item4" class="question">How do you ensure the security of user data in your web
-                                applications?</label>
-                            <label for="item4" class="icon-open"></label>
-                            <label for="item4" class="icon-close"></label>
-                        </div>
-                        <div class="answer">
-                            <p>The timeline varies depending on the project's complexity and requirements. Our team
-                                strives to deliver projects on time while maintaining the highest quality standards.</p>
-                        </div>
+                    <div class="answer">
+                        <p>The timeline varies depending on the project's complexity and requirements. Our team
+                            strives to deliver projects on time while maintaining the highest quality standards.</p>
                     </div>
                 </div>
             </div>
-            <div class="box-right">
-                <div class="faq-box">
-                    <input type="checkbox" id="item5" hidden>
-                    <div class="faq-text">
-                        <div class="list-question">
-                            <label for="item5" class="question">Can you create a responsive website design that looks
-                                great on all devices?</label>
-                            <label for="item5" class="icon-open"></label>
-                            <label for="item5" class="icon-close"></label>
-                        </div>
-                        <div class="answer">
-                            <p>The timeline varies depending on the project's complexity and requirements. Our team
-                                strives to deliver projects on time while maintaining the highest quality standards.</p>
-                        </div>
+
+            <div class="faq-box">
+                <input type="checkbox" id="item2" hidden>
+                <div class="faq-text">
+                    <div class="list-question">
+                        <label for="item2" class="question">Can you handle large-scale mobile app development
+                            projects?</label>
+                        <label for="item2" class="icon-open"></label>
+                        <label for="item2" class="icon-close"></label>
+                    </div>
+                    <div class="answer">
+                        <p>The timeline varies depending on the project's complexity and requirements. Our team
+                            strives to deliver projects on time while maintaining the highest quality standards.</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="faq-box">
-                    <input type="checkbox" id="item6" hidden>
-                    <div class="faq-text">
-                        <div class="list-question">
-                            <label for="item6" class="question">What digital marketing strategies do you employ to drive
-                                website traffic?</label>
-                            <label for="item6" class="icon-open"></label>
-                            <label for="item6" class="icon-close"></label>
-                        </div>
-                        <div class="answer">
-                            <p>The timeline varies depending on the project's complexity and requirements. Our team
-                                strives to deliver projects on time while maintaining the highest quality standards.</p>
-                        </div>
+            <div class="faq-box">
+                <input type="checkbox" id="item3" hidden>
+                <div class="faq-text">
+                    <div class="list-question">
+                        <label for="item3" class="question">Do you offer maintenance services for websites and apps
+                            developed by other companies?</label>
+                        <label for="item3" class="icon-open"></label>
+                        <label for="item3" class="icon-close"></label>
+                    </div>
+                    <div class="answer">
+                        <p>The timeline varies depending on the project's complexity and requirements. Our team
+                            strives to deliver projects on time while maintaining the highest quality standards.</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="faq-box">
-                    <input type="checkbox" id="item7" hidden>
-                    <div class="faq-text">
-                        <div class="list-question">
-                            <label for="item7" class="question">Can you integrate third-party APIs into our mobile
-                                app?</label>
-                            <label for="item7" class="icon-open"></label>
-                            <label for="item7" class="icon-close"></label>
-                        </div>
-                        <div class="answer">
-                            <p>The timeline varies depending on the project's complexity and requirements. Our team
-                                strives to deliver projects on time while maintaining the highest quality standards.</p>
-                        </div>
+            <div class="faq-box">
+                <input type="checkbox" id="item4" hidden>
+                <div class="faq-text">
+                    <div class="list-question">
+                        <label for="item4" class="question">How do you ensure the security of user data in your web
+                            applications?</label>
+                        <label for="item4" class="icon-open"></label>
+                        <label for="item4" class="icon-close"></label>
+                    </div>
+                    <div class="answer">
+                        <p>The timeline varies depending on the project's complexity and requirements. Our team
+                            strives to deliver projects on time while maintaining the highest quality standards.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="box-right">
+            <div class="faq-box">
+                <input type="checkbox" id="item5" hidden>
+                <div class="faq-text">
+                    <div class="list-question">
+                        <label for="item5" class="question">Can you create a responsive website design that looks
+                            great on all devices?</label>
+                        <label for="item5" class="icon-open"></label>
+                        <label for="item5" class="icon-close"></label>
+                    </div>
+                    <div class="answer">
+                        <p>The timeline varies depending on the project's complexity and requirements. Our team
+                            strives to deliver projects on time while maintaining the highest quality standards.</p>
+                    </div>
+                </div>
+            </div>
 
-                <div class="faq-box">
-                    <input type="checkbox" id="item8" hidden>
-                    <div class="faq-text-last">
-                        <div class="list-question">
-                            <label for="item8" class="question">How do you ensure cross-platform compatibility for
-                                mobile apps?</label>
-                            <label for="item8" class="icon-open"></label>
-                            <label for="item8" class="icon-close"></label>
-                        </div>
-                        <div class="answer">
-                            <p>The timeline varies depending on the project's complexity and requirements. Our team
-                                strives to deliver projects on time while maintaining the highest quality standards.</p>
-                        </div>
+            <div class="faq-box">
+                <input type="checkbox" id="item6" hidden>
+                <div class="faq-text">
+                    <div class="list-question">
+                        <label for="item6" class="question">What digital marketing strategies do you employ to drive
+                            website traffic?</label>
+                        <label for="item6" class="icon-open"></label>
+                        <label for="item6" class="icon-close"></label>
+                    </div>
+                    <div class="answer">
+                        <p>The timeline varies depending on the project's complexity and requirements. Our team
+                            strives to deliver projects on time while maintaining the highest quality standards.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-box">
+                <input type="checkbox" id="item7" hidden>
+                <div class="faq-text">
+                    <div class="list-question">
+                        <label for="item7" class="question">Can you integrate third-party APIs into our mobile
+                            app?</label>
+                        <label for="item7" class="icon-open"></label>
+                        <label for="item7" class="icon-close"></label>
+                    </div>
+                    <div class="answer">
+                        <p>The timeline varies depending on the project's complexity and requirements. Our team
+                            strives to deliver projects on time while maintaining the highest quality standards.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-box">
+                <input type="checkbox" id="item8" hidden>
+                <div class="faq-text-last">
+                    <div class="list-question">
+                        <label for="item8" class="question">How do you ensure cross-platform compatibility for
+                            mobile apps?</label>
+                        <label for="item8" class="icon-open"></label>
+                        <label for="item8" class="icon-close"></label>
+                    </div>
+                    <div class="answer">
+                        <p>The timeline varies depending on the project's complexity and requirements. Our team
+                            strives to deliver projects on time while maintaining the highest quality standards.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
 <div class="partner">
     <div class="partner-header container">
         <h2><span>Our</span> Partners and Clients</h2>
@@ -582,79 +568,77 @@
             a testament to our dedication and expertise in the digital realm.</p>
     </div>
 </div>
-<div class="partner container">
-    <div class="partner-box">
-        <div class="partner-card">
-            <div class="icon-card">
-                <img src="./logo/partner-logo1.svg" alt="logo1">
-                <img src="./icons/icon-plus.svg" alt="icon plus">
-                <img src="./logo/partner-logo2.svg" alt="logo2">
-            </div>
-            <div class="text-card">
-                <h3>ABC Tech Solutions</h3>
-                <p>A leading technology firm that trusted DigitX to develop their responsive website, showcasing their
-                    cutting-edge products and services.</p>
-            </div>
+<div class="partner-box container">
+    <div class="partner-card">
+        <div class="icon-card">
+            <img src="./logo/partner-logo1.svg" alt="logo1">
+            <img src="./icons/icon-plus.svg" alt="icon plus">
+            <img src="./logo/partner-logo2.svg" alt="logo2">
         </div>
-
-        <div class="partner-card">
-            <div class="icon-card">
-                <img src="./logo/partner-logo1.svg" alt="logo1">
-                <img src="./icons/icon-plus.svg" alt="icon plus">
-                <img src="./logo/partner-logo3.svg" alt="logo4">
-            </div>
-            <div class="text-card">
-                <h3>GreenEarth Eco Store</h3>
-                <p>DigitX collaborated with GreenEarth Eco Store to create an engaging e-commerce platform that promotes sustainable living and eco-friendly products.</p>
-            </div>
+        <div class="text-card">
+            <h3>ABC Tech Solutions</h3>
+            <p>A leading technology firm that trusted DigitX to develop their responsive website, showcasing their
+                cutting-edge products and services.</p>
         </div>
+    </div>
 
-        <div class="partner-card">
-            <div class="icon-card">
-                <img src="./logo/partner-logo1.svg" alt="logo1">
-                <img src="./icons/icon-plus.svg" alt="icon plus">
-                <img src="./logo/partner-logo4.svg" alt="logo4">
-            </div>
-            <div class="text-card">
-                <h3>HealthTech Innovations</h3>
-                <p>DigitX developed a user-centric mobile app for HealthTech Innovations, helping them revolutionize the way people track and manage their health.</p>
-            </div>
+    <div class="partner-card">
+        <div class="icon-card">
+            <img src="./logo/partner-logo1.svg" alt="logo1">
+            <img src="./icons/icon-plus.svg" alt="icon plus">
+            <img src="./logo/partner-logo3.svg" alt="logo4">
         </div>
-
-        <div class="partner-card">
-            <div class="icon-card">
-                <img src="./logo/partner-logo1.svg" alt="logo1">
-                <img src="./icons/icon-plus.svg" alt="icon plus">
-                <img src="./logo/partner-logo5.svg" alt="logo5">
-            </div>
-            <div class="text-card">
-                <h3>GlobalTech Solutions</h3>
-                <p>GlobalTech Solutions partnered with DigitX for a website redesign, resulting in a modern interface that elevates their online presence.</p>
-            </div>
+        <div class="text-card">
+            <h3>GreenEarth Eco Store</h3>
+            <p>DigitX collaborated with GreenEarth Eco Store to create an engaging e-commerce platform that promotes sustainable living and eco-friendly products.</p>
         </div>
+    </div>
 
-        <div class="partner-card">
-            <div class="icon-card">
-                <img src="./logo/partner-logo1.svg" alt="logo1">
-                <img src="./icons/icon-plus.svg" alt="icon plus">
-                <img src="./logo/partner-logo6.svg" alt="logo6">
-            </div>
-            <div class="text-card">
-                <h3>TechGuru Inc.</h3>
-                <p>DigitX's digital marketing strategies boosted TechGuru Inc.'s online visibility and customer engagement, driving significant business growth.</p>
-            </div>
+    <div class="partner-card">
+        <div class="icon-card">
+            <img src="./logo/partner-logo1.svg" alt="logo1">
+            <img src="./icons/icon-plus.svg" alt="icon plus">
+            <img src="./logo/partner-logo4.svg" alt="logo4">
         </div>
+        <div class="text-card">
+            <h3>HealthTech Innovations</h3>
+            <p>DigitX developed a user-centric mobile app for HealthTech Innovations, helping them revolutionize the way people track and manage their health.</p>
+        </div>
+    </div>
 
-        <div class="partner-card">
-            <div class="icon-card">
-                <img src="./logo/partner-logo1.svg" alt="logo1">
-                <img src="./icons/icon-plus.svg" alt="icon plus">
-                <img src="./logo/partner-logo7.svg" alt="logo7">
-            </div>
-            <div class="text-card">
-                <h3>ArtScape Gallery</h3>
-                <p>DigitX brought ArtScape Gallery's artistic vision to life with a visually stunning website, showcasing the work of talented artists.</p>
-            </div>
+    <div class="partner-card">
+        <div class="icon-card">
+            <img src="./logo/partner-logo1.svg" alt="logo1">
+            <img src="./icons/icon-plus.svg" alt="icon plus">
+            <img src="./logo/partner-logo5.svg" alt="logo5">
+        </div>
+        <div class="text-card">
+            <h3>GlobalTech Solutions</h3>
+            <p>GlobalTech Solutions partnered with DigitX for a website redesign, resulting in a modern interface that elevates their online presence.</p>
+        </div>
+    </div>
+
+    <div class="partner-card">
+        <div class="icon-card">
+            <img src="./logo/partner-logo1.svg" alt="logo1">
+            <img src="./icons/icon-plus.svg" alt="icon plus">
+            <img src="./logo/partner-logo6.svg" alt="logo6">
+        </div>
+        <div class="text-card">
+            <h3>TechGuru Inc.</h3>
+            <p>DigitX's digital marketing strategies boosted TechGuru Inc.'s online visibility and customer engagement, driving significant business growth.</p>
+        </div>
+    </div>
+
+    <div class="partner-card">
+        <div class="icon-card">
+            <img src="./logo/partner-logo1.svg" alt="logo1">
+            <img src="./icons/icon-plus.svg" alt="icon plus">
+            <img src="./logo/partner-logo7.svg" alt="logo7">
+        </div>
+        <div class="text-card">
+            <h3>ArtScape Gallery</h3>
+            <p>DigitX brought ArtScape Gallery's artistic vision to life with a visually stunning website, showcasing the work of talented artists.</p>
         </div>
     </div>
 </div>
@@ -770,7 +754,6 @@
                 </ul>
             </div>
         </div>
-
     </div>
 </footer>
 

@@ -60,6 +60,8 @@
     gap: 10px;
     text-align: center;
     margin-top: 40px;
+    position: relative;
+    z-index: 10;
 }
 
 .btn-primary {
@@ -90,8 +92,6 @@
 
 }
 
-.cta-section-brand img  {
-}
 .cta-section-container:before {
     position: absolute;
     bottom: 0;
@@ -102,8 +102,19 @@
     height: 234px;
     background: #0F0F0F33;
     background-blend-mode: overlay;
-    backdrop-filter: blur(90px)
+    backdrop-filter: blur(20px)
 }
+
+.btn-primary:hover {
+    background-color: #808080;
+    transition: all 0.3s ease;
+}
+.btn-outline:hover {
+    background: rgba(255,255,255,0.3);
+    transition: all 0.3s ease;
+}
+
+
 
 
 

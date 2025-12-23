@@ -106,8 +106,12 @@
         background-size: cover;
         width: 334px;
         height: 315px;
-
     }
+
+    .hero-right::before {
+        height: 292px;
+    }
+
 /*    Features*/
     .features {
         margin-top: 120px;
@@ -137,7 +141,7 @@
 
     .features-header > p {
         font-size: 14px;
-        margin: 20px 120px;
+        margin: 20px 100px;
     }
 
     .features-card-top,
@@ -202,7 +206,7 @@
 
     .services-header p {
         font-size: 14px;
-        margin: 20px 105px;
+        margin: 20px 100px;
         padding: 0;
     }
 
@@ -268,7 +272,7 @@
     }
 
     .works-header {
-        margin-bottom: 0;
+        margin-bottom: 100px;
     }
 
     .works-header h2 {
@@ -277,7 +281,7 @@
 
     .works-header p {
         font-size: 14px;
-        margin: 20px 0;
+        margin: 20px 100px;
         padding: 0;
     }
 
@@ -338,12 +342,7 @@
 /*Our Testimonials*/
 
     .testimonials-header {
-        margin-top: 84px;
-        margin-bottom: 60px;
-    }
-
-    .testimonials-header {
-
+        margin: 100px 0;
     }
 
     .testimonials-header h2 {
@@ -352,17 +351,14 @@
 
     .testimonials-header p {
         font-size: 14px;
-        margin: 20px 0;
+        margin: 20px 100px;
         padding: 0;
     }
 
-    .testimonials:before {
+    .test-wrapper:before,
+    .test-wrapper:after{
         width: 370px;
-        height: 298px;
-    }
-    .test-box:before {
-        width: 370px;
-        height: 298px;
+        height: 100%;
     }
 
     .test-box {
@@ -430,7 +426,7 @@
 /*FAQ*/
 
     .faq {
-        margin-top: 84px;
+        margin: 100px 0;
     }
 
     .faq-header {
@@ -482,11 +478,7 @@
     }
 /* Partner*/
     .partner {
-        margin-top: 84px;
-    }
-
-    .partner-header {
-        margin-bottom: 30px;
+        margin: 100px 0;
     }
 
     .partner-header h2 {

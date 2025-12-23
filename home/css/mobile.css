@@ -188,7 +188,15 @@
         width: auto;
     }
 
+    .hero-right::before {
+        height: 141px;
+    }
+
 /*    Features */
+    .features-header {
+        margin-bottom: 50px;
+    }
+
     .features-header h2 {
         font-size: 28px;
         font-weight: 600;
@@ -202,6 +210,10 @@
 
     .features-card-top:after {
         display: none;
+    }
+
+    .features-box {
+        padding: 0;
     }
 
     .features-card-top,
@@ -279,6 +291,11 @@
     }
 
 /*    Services*/
+    .services-header {
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+
     .services-header h2 {
         font-size: 28px;
         font-weight: 600;
@@ -331,6 +348,7 @@
         margin-top: 80px;
         margin-bottom: 50px;
     }
+
 
     .works-header h2 {
         font-size: 28px;
@@ -402,8 +420,7 @@
 
 /*Our testimonials*/
     .testimonials-header {
-        margin-top: 80px;
-        margin-bottom: 50px;
+        margin: 80px 0 50px 0;
     }
 
     .testimonials-header h2 {
@@ -418,8 +435,8 @@
         font-size: 14px;
     }
 
-    .test-box:before,
-    .testimonials:before{
+    .test-wrapper:before,
+    .test-wrapper:after{
         width: 71px;
         height: 100%;
     }
@@ -498,13 +515,13 @@
         width: 100%;
     }
 
-
     .questions-box {
         margin-top: 50px;
         gap: 0;
         flex-direction: column;
     }
     .question {
+        padding: 15px 50px 15px 0;
         font-size: 16px;
     }
     .answer p {

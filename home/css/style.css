@@ -4,9 +4,6 @@
     box-sizing: border-box;
     font-family: "Sora", sans-serif;
 }
-html {
-    width: 100%;
-}
 
 body{
     background-color: #0f0f0f;
@@ -15,6 +12,7 @@ body{
 }
 
 .container {
-    max-width: 1598px;
+    max-width: 1440px;
+    padding: 0 24px;
     margin: auto;
 }

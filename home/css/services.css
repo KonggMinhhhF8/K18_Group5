@@ -2,12 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: space-between;
 }
 
 .services-card {
     display: flex;
     flex-direction: column;
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 30px) / 2);
     border-radius: 20px;
     text-align: center;
     backdrop-filter: blur(12px);
@@ -46,7 +47,7 @@
 .services-header p {
     color: #808080;
     font-size: 18px;
-    margin: 20px 250px
+    margin: 20px 220px
 }
 
 
@@ -89,6 +90,11 @@
 
 .services-button a img {
     margin-left: 12px;
+}
+
+.services-button a:hover {
+    background: rgba(255,255,255,0.3);
+    transition: all 0.3s ease;
 }
 
 

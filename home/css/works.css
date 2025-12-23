@@ -1,5 +1,5 @@
 .works {
-    margin: 150px;
+    margin: 150px 0;
 }
 
 .works-header {
@@ -18,20 +18,20 @@
 .works-header p {
     color: #808080;
     font-size: 18px;
-    margin: 20px 250px
+    margin: 20px 220px
 }
 
 .works-box {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 30px;
     justify-content: center;
 }
 
 .works-card {
     background: linear-gradient(180deg, #1A1A1A -26.18%, rgba(26, 26, 26, 0) 59.52%);
     padding: 50px;
-    max-width: 773px;
+    width: calc((100% - 30px) /2 );
     border: 1px solid;
     border-image-source: linear-gradient(180deg, #1F1F1F 0%, rgba(31, 31, 31, 0) 100%);
     border-radius: 20px;
@@ -41,7 +41,7 @@
     position: relative;
     background-image: url("../images/works-background.svg");
     background-repeat: no-repeat;
-    width: 673px;
+    width: 100%;
     height: 411px;
     border: 1px solid #1a1a1a;
     border-radius: 20px;
@@ -53,7 +53,8 @@
     align-items: center;
     background: #1A1A1A33;
     position: absolute;
-    padding: 18px 24px;
+    width: 272px;
+    padding: 16px 20px;
     border: 1px solid #262626;
     border-radius: 74px;
     backdrop-filter: blur(12px);
@@ -75,8 +76,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-
 }
 
 .works-text {
@@ -123,6 +122,12 @@
     margin-left: 10px;
 }
 
-.works-button-box a {
+.works-button:hover {
+    background: rgba(255,255,255,0.3);
+    transition: all 0.3s ease;
+ }
 
+.works-button-box:hover {
+    background: rgba(255,255,255,0.3);
+    transition: all 0.3s ease;
 }
