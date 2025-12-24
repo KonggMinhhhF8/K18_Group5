@@ -23,7 +23,6 @@
         height: 28px;
     }
 
-
     .nav-logo img {
         width: 40px;
         height: 28px;
@@ -131,7 +130,6 @@
         gap: 25px;
     }
 
-
     .features-header h2 {
         font-weight: 600;
         font-size: 32px;
@@ -160,7 +158,6 @@
     .features-card-bottom .features-card:nth-child(2)::after{
         right: -20px;
     }
-
 
     .features-icon img {
         width: 66px;
@@ -222,7 +219,6 @@
         background-size: cover;
     }
 
-
     .services-card {
         width: calc((100% - 20px) / 2);
         display: flex;
@@ -265,7 +261,6 @@
     }
 
 /*Out work*/
-
     .works {
         margin-top: 84px;
         margin-bottom: 42px;
@@ -403,7 +398,6 @@
         width: 32px;
         height: 19px;
     }
-
 
     .avatar img {
         margin-left: 5px;
@@ -631,52 +625,4 @@
     .footer-legal-list li a{
         font-size: 12px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

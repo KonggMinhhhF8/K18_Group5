@@ -15,15 +15,18 @@
 .testimonials-header h2 {
     font-size: 48px;
     font-weight: 600;
+    line-height: 1.5;
 }
 
 .testimonials-header h2 span {
     color: #666666;
 }
+
 .testimonials-header p {
     color: #808080;
     font-size: 18px;
     margin: 20px 0;
+    line-height: 1.5;
 }
 
 .test-box {
@@ -59,9 +62,6 @@
     z-index: 10;
 }
 
-
-
-
 .test-box::-webkit-scrollbar {
     height: 8px;
 }
@@ -80,7 +80,6 @@
     background: rgba(255, 255, 255, 0.7);
 
 }
-
 
 .test-card-top {
     position: relative;
@@ -118,7 +117,6 @@
     color: rgba(255, 255, 255, 1);
     line-height: 1.5;
     letter-spacing: 0;
-
 }
 
 .triangle {
@@ -141,6 +139,7 @@
 }
 
 .test-info h3 {
+    line-height: 1.5;
     font-weight: 400;
     font-size: 20px;
     color: rgba(255, 255, 255, 1);
@@ -148,12 +147,11 @@
 }
 
 .test-info span {
+    line-height: 1.5;
     font-weight: 300;
     font-size: 18px;
-    line-height: 1.5;
     letter-spacing: 0;
     color: rgba(128, 128, 128, 1);
-
 }
 
 

@@ -30,7 +30,7 @@
     text-decoration: none;
     color: #fff;
     padding: 16px 25px;
-
+    line-height: 1.0;
 }
 
 .nav-links li a:hover {
