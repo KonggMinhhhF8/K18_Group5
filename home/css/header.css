@@ -96,17 +96,20 @@
     background-blend-mode: overlay;
     backdrop-filter: blur(20px);
     width: 100%;
-    height: 472px;
+    height: 40%;
     left: 0;
     bottom: 0;
 }
 
 .hero-images {
     background-image: url("../images/logo-dx.svg");
-    width: 603px;
-    height: 570px;
+    width: 100%;
+    max-width: 603px;
+    aspect-ratio: 603 / 570;
+    height: auto;
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
 }
 
 

@@ -33,12 +33,40 @@
     display: flex;
     flex-wrap: nowrap;
     gap: 30px;
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 
 .test-wrapper {
     position: relative;
     width: 100%;
+    overflow: hidden;
+}
+
+.test-box {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    width: max-content; /* Đảm bảo chiều rộng dựa trên nội dung các thẻ */
+    animation: scroll 40s linear infinite; /* Tên animation, thời gian, kiểu chạy, lặp vô tận */
+}
+
+/* 3. Dừng chuyển động khi di chuột vào (tùy chọn nhưng nên có) */
+.test-box:hover {
+    animation-play-state: paused;
+}
+
+
+.test-card {
+    flex-shrink: 0;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .test-wrapper:before {
@@ -132,10 +160,11 @@
 
 .test-info {
     margin: 6px 0;
-    height: 59px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex: 1;
 }
 
 .test-info h3 {

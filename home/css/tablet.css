@@ -42,7 +42,7 @@
 /*Header*/
 
     .hero {
-        max-height: 620px;
+        height: auto;
     }
 
     .hero-left {
@@ -108,7 +108,7 @@
     }
 
     .hero-right::before {
-        height: 292px;
+        height: 50%;
     }
 
 /*    Features*/
@@ -361,7 +361,7 @@
     }
 
     .test-card-top {
-        width: 370px;
+        max-width: 370px;
         height: 208px;
         padding: 21px;
     }
@@ -389,6 +389,7 @@
         margin-top: 16px;
     }
 
+
     .triangle {
         left: 14px;
         bottom: -24px;
@@ -414,7 +415,7 @@
     }
 
     .test-info span {
-        font-size: 14px;
+        font-size: 13px;
     }
 
 /*FAQ*/
