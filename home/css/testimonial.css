@@ -46,11 +46,11 @@
     display: flex;
     flex-wrap: nowrap;
     gap: 30px;
-    width: max-content; /* Đảm bảo chiều rộng dựa trên nội dung các thẻ */
-    animation: scroll 40s linear infinite; /* Tên animation, thời gian, kiểu chạy, lặp vô tận */
+    width: max-content;
+    animation: scroll 40s linear infinite;
 }
 
-/* 3. Dừng chuyển động khi di chuột vào (tùy chọn nhưng nên có) */
+
 .test-box:hover {
     animation-play-state: paused;
 }
