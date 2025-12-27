@@ -50,7 +50,6 @@
     animation: scroll 40s linear infinite;
 }
 
-
 .test-box:hover {
     animation-play-state: paused;
 }

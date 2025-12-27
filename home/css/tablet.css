@@ -464,6 +464,7 @@
     .answer {
         font-size: 14px;
         padding-bottom: 24px;
+        padding-right: 60px;
     }
 
     .icon-open,
@@ -624,5 +625,123 @@
     .footer-version,
     .footer-legal-list li a{
         font-size: 12px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .container {
+        padding: 0 50px;
+        margin: auto;
+    }
+
+    .nav-bar {
+        padding: 20px 50px;
+    }
+
+    .hero-left {
+        padding-left: 50px;
+    }
+
+    .services-icon {
+        background-size: cover;
+        padding-top: 60px;
+    }
+
+    .services-icon img {
+        width: 130px;
+    }
+
+    .services-text p {
+        padding: 0 30px;
+    }
+
+    .features-card {
+        gap: 15px;
+    }
+
+    .features-icon img {
+        width: 80px;
+    }
+
+    .features-header,
+    .services-header {
+        margin-top: 100px;
+    }
+    .features-header p,
+    .services-header p{
+        margin: 0 120px;
+    }
+
+    .features-card-top,
+    .features-box,
+    .features-card-bottom {
+        gap: 40px;
+    }
+
+    .features-card-top:after {
+        bottom: -20px;
+    }
+
+    .features-button a {
+        padding: 12px 12px 12px 20px;
+    }
+
+    .features-card-top .features-card:nth-child(1)::after,
+    .features-card-bottom .features-card:nth-child(1)::after,
+    .features-card-top .features-card:nth-child(2)::after,
+    .features-card-bottom .features-card:nth-child(2)::after{
+        right: -20px;
+    }
+
+    .works {
+        margin: 100px 0;
+    }
+
+    .works-header p {
+        margin: 20px 120px;
+    }
+
+    .works-card {
+        padding: 30px;
+    }
+
+    .works-background {
+        width: auto;
+        height: 290px;
+        background-size: contain;
+    }
+
+    .works-icon img {
+        width: 120px;
+        height: auto;
+    }
+
+    .icon-card img:nth-child(1),
+    .icon-card img:nth-child(3) {
+        width: 80px;
+    }
+
+    .text-card {
+        margin-top: 30px;
+    }
+
+    .partner-card {
+        padding: 50px 30px 20px 30px;
+    }
+
+    .cta-section-container {
+        padding: 40px 60px
+    }
+
+    .search-box {
+        margin-top: 50px;
+    }
+
+    .question {
+        padding: 20px 60px 20px 0;
+    }
+
+    .footer-main {
+        gap: 16px
     }
 }

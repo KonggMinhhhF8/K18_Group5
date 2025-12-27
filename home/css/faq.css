@@ -92,6 +92,12 @@
     background-color: #1A1A1A;
 }
 
+.icon-open:hover,
+.icon-close:hover {
+    background-color: rgba(255,255,255,0.3);
+    transition: all 0.3s ease;
+}
+
 .icon-close {
     display: none;
     background-image: url("../icons/icon-close.svg");
