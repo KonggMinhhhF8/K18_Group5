@@ -3,9 +3,11 @@
     border-radius: 20px;
     position: relative;
     padding: 130px 150px 0 150px;
-    background: linear-gradient(180deg, #1A1A1A -138.96%, #0F0F0F 100%);
-    border: 1px solid;
-    border-image-source: linear-gradient(180deg, #262626 0%, rgba(38, 38, 38, 0) 100%);
+    border: 1px solid transparent;
+    overflow: hidden;
+    background:
+            linear-gradient(180deg, #1A1A1A -138.96%, #0F0F0F 100%) padding-box,
+            linear-gradient(180deg, #262626 0%, rgba(38, 38, 38, 0) 100%) border-box;
 }
 
 .background-cta-left {
