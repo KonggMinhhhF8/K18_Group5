@@ -22,12 +22,15 @@
                 <div class="logo">
                     <img src="./projectPage/images/Logo.svg" alt="DX Logo" />
                 </div>
+                <button class="menu-toggle" aria-label="Toggle menu">☰</button>
 
                 <nav class="nav">
                     <ul class="nav-list">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#projects" class="active">Projects</a></li>
+                        <li>
+                            <a href="#projects" class="active">Projects</a>
+                        </li>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#contact">Contact Us</a></li>
                         <li><a href="#careers">Careers</a></li>
@@ -36,6 +39,14 @@
                 </nav>
             </div>
         </header>
+        <script>
+            const toggle = document.querySelector(".menu-toggle");
+            const nav = document.querySelector(".nav");
+
+            toggle.addEventListener("click", () => {
+                nav.classList.toggle("active");
+            });
+        </script>
 
         <!-- ================= HERO ================= -->
         <section class="hero">
@@ -442,7 +453,6 @@
             <!-- ================= UPCOMING PROJECTS ================= -->
             <section class="upcoming-projects">
                 <div class="container">
-                    z
                     <!-- Title -->
                     <div class="upcoming-header">
                         <h2 class="upcoming-title">
@@ -705,10 +715,16 @@
                     <span class="social-text">Follow Us On Social Media</span>
                     <div class="social-icons">
                         <!-- ICON để trống -->
-                        
-                        <div class="icon"><img src="./projectPage/icons/Button1.svg" alt="" /></div>
-                        <div class="icon"><img src="./projectPage/icons/Button2.svg" alt="" /></div>
-                        <div class="icon"><img src="./projectPage/icons/Button3.svg" alt="" /></div>
+
+                        <div class="icon">
+                            <img src="./projectPage/icons/Button1.svg" alt="" />
+                        </div>
+                        <div class="icon">
+                            <img src="./projectPage/icons/Button2.svg" alt="" />
+                        </div>
+                        <div class="icon">
+                            <img src="./projectPage/icons/Button3.svg" alt="" />
+                        </div>
                     </div>
                 </div>
             </div>
