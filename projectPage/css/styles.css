@@ -764,13 +764,17 @@ body {
     }
 }
 /* ==========PROJECT LIST (Key Features)========= */
+/* ================= MOBILE FIX (<=768px) ================= */
 @media (max-width: 768px) {
+    /* PROJECT LIST */
     .project-list {
+        flex-direction: column;
         gap: 0;
+        margin: 0 5px;
     }
 
     .project-item {
-        max-width: 100%;
+        width: 100%;
         height: auto;
         padding: 24px 16px;
     }
@@ -778,45 +782,71 @@ body {
     .project-item + .project-item {
         border-left: none;
         border-top: 1px solid var(--color-border);
-        padding-left: 0;
     }
-}
 
-/* ================= METHODS USED FIX OVERFLOW ================= */
+    /* E-COMMERCE HEADER */
+    .E-commerce_show-less {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
 
-.Methods-Used {
-    width: 100%;
-    overflow: hidden;
-}
+    .show-less {
+        order: -1;
+        align-self: center;
+    }
 
-/* Hàng methods */
-.row-methods {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap; /* QUAN TRỌNG */
-    width: 100%;
-}
+    /* CARD META */
+    .card-meta {
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+    }
 
-/* Mỗi item */
-.icons-profile {
-    flex: 1 1 calc(33.333% - 16px);
-    max-width: calc(33.333% - 16px);
-    box-sizing: border-box;
-}
+    .meta-divider {
+        width: 100%;
+        height: 1px;
+    }
 
-/* Box trong */
-.box-methods-used,
-.box-border,
-.methods {
-    width: 100%;
-    box-sizing: border-box;
+    /* TECHNOLOGIES */
+    .Technologies {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .icons-Technologies {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    /* TEAM */
+    .icons-profile {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    /* METHODS */
+    .row-methods {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .box-border {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .methods {
+        padding: 10px 16px;
+        font-size: 1.4rem;
+    }
 }
 
 /* ================= RESPONSIVE ================= */
 
 /* Tablet */
 @media (max-width: 1024px) {
-    .icons-profile {
+    .team-profile .item-eam-Members {
         flex: 1 1 calc(50% - 16px);
         max-width: calc(50% - 16px);
     }
@@ -827,15 +857,106 @@ body {
     .row-methods {
         gap: 12px;
     }
-
-    .icons-profile {
-        flex: 1 1 100%;
-        max-width: 100%;
+    .list-item {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        width: 100%;
     }
-
+    .item {
+        flex: 1 1 100%;
+        border: none;
+    }
+    .list-item .item {
+        flex: unset;
+        max-width: unset;
+        width: 100%;
+    }
     .item-title {
         font-size: 14px;
         text-align: center;
+    }
+}
+
+/* ======================================================================= */
+@media (max-width: 768px) {
+    .card-meta {
+        flex-direction: column;
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .meta-item {
+        width: 100%;
+    }
+
+    .meta-divider {
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(
+            90deg,
+            #262626 0%,
+            rgba(38, 38, 38, 0) 100%
+        );
+    }
+}
+
+@media (max-width: 768px) {
+    .Technologies {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .icons-Technologies {
+        display: grid; /* đổi từ flex sang grid */
+        grid-template-columns: repeat(4, 1fr); /* 4 item / hàng */
+        gap: 16px;
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .team-profile {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .icons-profile .item-eam-Members {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .icons-profile .avatar {
+        align-items: center;
+        gap: 12px;
+    }
+}
+@media (max-width: 768px) {
+    .row-methods {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .box-border {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .methods {
+        padding: 10px 16px;
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 768px) {
+    .item-title {
+        font-size: 1.6rem;
+    }
+
+    .meta-label {
+        font-size: 1.3rem;
+    }
+
+    .meta-value {
+        font-size: 1.5rem;
     }
 }
 
@@ -845,11 +966,21 @@ body {
     }
 
     .E-commerce_show-less {
+        display: flex;
         flex-direction: column;
-        gap: 16px;
         align-items: flex-start;
+        gap: 12px;
     }
 
+    .show-less {
+        order: -1;
+        align-self: center;
+        /* font-size: 1.9rem;
+        opacity: 0.8; */
+    }
+    .btn-showless > img {
+        height: 50px;
+    }
     .icons-title {
         flex-wrap: wrap;
         gap: 10px;
@@ -859,58 +990,59 @@ body {
         font-size: 2rem;
     }
 }
+
 @media (max-width: 768px) {
     .Project-Description {
         padding: 20px;
+    }
+    .project-info-wrapper {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        border: 1px solid var(--color-border);
     }
 
     .Project-Description .list-item {
         flex-direction: column;
         height: auto;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr); /* 2 item / hàng */
+        gap: 16px;
+        height: auto;
+        padding: 0;
+        border: none;
     }
 
-    .Project-Description .item {
+    .item {
         width: 100%;
         padding: 12px 0;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .item + .item {
-        border-left: none;
-        border-top: 1px solid var(--color-border);
+        border: none !important;
     }
-}
-@media (max-width: 768px) {
     .Technologies {
-        flex-direction: column;
-        gap: 20px;
+        border: none;
+        margin: 0px;
     }
-
-    .icons-Technologies {
+    .box-technologies {
+        margin: 0px 0px 0px -20px;
+    }
+    .icons-Technologies img {
         flex-wrap: wrap;
-        justify-content: center;
+        height: 50px;
+        margin-left:-30px;
     }
-
-    .icons-profile {
-        flex-direction: column;
+    .Team-Members {
+        border: none;
     }
 }
 
-@media (max-width: 768px) {
-    .Technologies {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .icons-Technologies {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .icons-profile {
-        flex-direction: column;
-    }
-}
 @media (max-width: 768px) {
     .row-methods {
         flex-direction: column;
@@ -953,8 +1085,6 @@ body {
 }
 
 /* ================= DIGITAL RESPONSIVE ================= */
-
-/* Desktop giữ nguyên */
 
 /* Tablet */
 @media (max-width: 1024px) {
@@ -1002,5 +1132,18 @@ body {
         height: 110px;
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
+    }
+}
+
+/* HEADER + NAV (Tablet) */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header-top {
+        padding: 0 24px;
+    }
+
+    .nav-list a {
+        font-size: 1.6rem;
+        padding: 6px 12px;
     }
 }
